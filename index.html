@@ -1,21 +1,90 @@
-The MIT License (MIT)
+<!--
+	Based on startbootstrap's '4 Col Portfolio
+	https://startbootstrap.com/template-overviews/4-col-portfolio/
+-->
+<!DOCTYPE html>
+<html lang="en">
 
-Copyright (c) 2013-2018 Blackrock Digital LLC
+  <head>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="My Name">
+    <meta name="description" content="Personal Portfolio">
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+    <title>My Name</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="media/favicon.ico"/>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-min-plus.css" rel="stylesheet">
+	
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400i,400,100" rel="stylesheet">
+	
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+	<div id="nav-row"></div>
+
+    <!-- Page Content -->
+    <div class="container">
+	
+		<!-- About Me Card -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card border-primary top-margin bottom-margin">
+					<div class="card-header bg-primary font-large">About me</div>
+					<div class="card-body">
+						<p>Hi I'm Name, a student currently at the University of City</p>
+						
+						<a class="btn btn-primary" href="/media/CV.pdf" download>Download my CV  <span class="badge badge-pill bg-white text-primary">01/2000</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Category Title -->
+		<div class="row">
+			<div id="category1-anchor" class="col-lg-2 col-md-3 portfolio-category bg-primary font-large">Category 1</div>
+			<hr class="border-primary">
+		</div>
+		<!-- Panels -->
+		<div class="row" id="category1-row"></div>
+		
+		<!-- Category Title -->
+		<div class="row">
+			<div id="category2-anchor" class="col-lg-2 col-md-3 portfolio-category bg-primary font-large">Category 2</div>
+			<hr class="border-primary">
+		</div>
+		<!-- Panels -->
+		<div class="row" id="category2-row"></div>
+  
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div id="footer-row"></div>
+	
+	<!-- Load Rows -->
+	<script>
+		$(function(){
+			$("#nav-row").load("nav/nav.html");
+			$("#category1-row").load("category1/category1-row.html");
+			$("#category2-row").load("category2/category2-row.html");
+			$("#footer-row").load("footer/footer.html");
+		});
+	</script>
+
+  </body>
+
+</html>
